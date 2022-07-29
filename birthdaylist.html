@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>birthday list</title>
+    <p>
+      <a class="navbarhome" href="index.html"
+        ><button class="navbarhome" type="button">Home</button></a
+      >
+      <a class="navbaricon" href="studentslist.html"
+        ><button class="navbaricons" type="button">back</button></a
+      >
+    </p>
+  </head>
+  <style>
+    body {
+      background-image: url(https://i.ytimg.com/vi/3OwJDYCxd9Q/maxresdefault.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: inherit;
+      background-attachment: fixed;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    td,
+    tr,
+    table {
+      color: white;
+      border: 2px solid greenyellow;
+      width: 930px;
+    }
+    th {
+      color: blue;
+    }
+    .navbarhome {
+      font-size: large;
+      border-style: hidden;
+      border-bottom: 2px solid red;
+      border-radius: 5px;
+      margin-left: 1px;
+    }
+    .navbarhome :hover {
+      font-size: x-large;
+      border-color: blue;
+      transition: 0.3s;
+      border-width: 3px;
+      color: blue;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>birth date</th>
+        <th>birthday coming in</th>
+      </tr>
+      <tr>
+        <td>S.Adharsh</td>
+        <td>December 15th 2009</td>
+        <td><p id="adharsh"></p></td>
+      </tr>
+      <tr>
+        <td>R.Balaji</td>
+        <td>October 10th 2009</td>
+        <td><p id="balaji"></p></td>
+      </tr>
+      <tr>
+        <td>D.Dhikshan</td>
+        <td>December 14th 2009</td>
+        <td><p id="dhikshan"></p></td>
+      </tr>
+      <tr>
+        <td>K.Gokula Krishnan</td>
+        <td>october 1st 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>Harsha Varman.J</td>
+        <td>august 18th 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>J.Joshuva</td>
+        <td>july 3rd 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>N.G.Keerthivasan</td>
+        <td>october 10th 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>S.A.Mithran</td>
+        <td>january 20 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>Nitin Kamal.P.K</td>
+        <td>october 21st 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>M.Praveen</td>
+        <td>july 27th 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>P.S.Sanjay</td>
+        <td>november 26th 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>G.Shaswad</td>
+        <td>december 11th 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>S.R.Seshavardhan</td>
+        <td>february 26th 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>S.Srivarshan</td>
+        <td>february 17th 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>H.S.Saichiranjeevi</td>
+        <td>march 14th 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>G.Tinakaran</td>
+        <td>march 5th 2010</td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td>Vishnu Vikram</td>
+        <td>december 2nd 2009</td>
+        <td><p></p></td>
+      </tr>
+      <tr></tr>
+    </table>
+  </body>
+  <script>
+    setInterval(() => {
+      let a = document.getElementById("adharsh");
+      let b = document.getElementById("balaji");
+      let c = document.getElementById("dhikshan");
+      let d = document.getElementById("gokul");
+      let e = document.getElementById("harsha");
+      let f = document.getElementById("joshuva");
+      let g = document.getElementById("keerthivasan");
+      let h = document.getElementById("mithran");
+      let i = document.getElementById("nitin");
+      let j = document.getElementById("praveen");
+      let k = document.getElementById("sanjay");
+      let l = document.getElementById("shaswad");
+      let m = document.getElementById("seshavardhan");
+      let n = document.getElementById("srivarshan");
+      let o = document.getElementById("sai");
+      let p = document.getElementById("tina");
+      let q = document.getElementById("vishnu");
+      let t = new Date();
+      let v = t.getMonth() + 1;
+      let x = t.getDate();
+      let remainingdaysofm = "";
+      if (
+        v == 1 ||
+        v == 3 ||
+        v == 5 ||
+        v == 7 ||
+        v == 8 ||
+        v == 10 ||
+        v == 12
+      ) {
+        remainingdaysofm = 31 - x;
+      }
+      if (v == 2) {
+        remainingdaysofm = 28 - x;
+      }
+      if (v == 4 || v == 6 || v == 9 || v == 11) {
+        remainingdaysofm = 30 - x;
+      }
+      if (v == 1) {
+        a.innerHTML =
+          remainingdaysofm +
+          28 +
+          31 +
+          30 +
+          31 +
+          30 +
+          31 +
+          31 +
+          30 +
+          31 +
+          30 +
+          14;
+        b.innerHTML =
+          remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        c.innerHTML =
+          remainingdaysofm +
+          28 +
+          31 +
+          30 +
+          31 +
+          30 +
+          31 +
+          31 +
+          30 +
+          31 +
+          30 +
+          13;
+      }
+      if (v == 2) {
+        a.innerHTML =
+          remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        c.innerHTML =
+          remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 3) {
+        a.innerHTML =
+          remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        c.innerHTML =
+          remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 4) {
+        a.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 9;
+        c.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 5) {
+        a.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 9;
+        c.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 6) {
+        a.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 31 + 31 + 30 + 9;
+        c.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 7) {
+        a.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 31 + 30 + 9;
+        c.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 13;
+      }
+      if (v == 8) {
+        a.innerHTML = remainingdaysofm + 30 + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 30 + 9;
+        c.innerHTML = remainingdaysofm + 30 + 31 + 30 + 13;
+      }
+      if (v == 9) {
+        a.innerHTML = remainingdaysofm + 31 + 30 + 14;
+        b.innerHTML = remainingdaysofm + 9;
+        c.innerHTML = remainingdaysofm + 31 + 30 + 13;
+      }
+      if (v == 10) {
+        a.innerHTML = remainingdaysofm + 30 + 14;
+        b.innerHTML = 10 - x;
+        c.innerHTML = remainingdaysofm + 30 + 13;
+      }
+      if (v == 11) {
+        a.innerHTML = remainingdaysofm + 14;
+        b.innerHTML = "This student's birthday is over";
+        c.innerHTML = remainingdaysofm + 13;
+      }
+      if (v == 12) {
+        a.innerHTML = 14 - x;
+        b.innerHTML = "This student's birthday is over";
+        c.innerHTML = 13 - x;
+      }
+    }, 1000);
+  </script>
+</html>
