@@ -1,0 +1,58 @@
+body {
+  background-image: url(https://media.istockphoto.com/photos/mountain-of-books-education-dark-background-picture-id1195277271?k=20&m=1195277271&s=170667a&w=0&h=F93ZN7IrlYLpAEMwUAeEl1wRQuFmIKlE8Apa-qPDbgg=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  background-attachment: fixed;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+h5 {
+  color: white;
+}
+h6 {
+  color: white;
+}
+p {
+  color: white;
+}
+.navbaricons {
+  font-size: large;
+  border-style: hidden;
+  border-bottom: 2px solid red;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+.navbaricon :hover {
+  font-size: x-large;
+  border-color: blue;
+  transition: 0.3s;
+  border-width: 3px;
+  color: blue;
+  cursor: pointer;
+}
+td,
+tr,
+table {
+  color: white;
+  border: 2px solid greenyellow;
+  width: 930px;
+}
+th {
+  color: blue;
+}
+.info {
+  color: orangered;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

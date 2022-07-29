@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>subjects</title>
+    <p>
+      <a class="navbarhome" href="index.html"
+        ><button class="navbarhome" type="button">Home</button></a
+      >
+      <a class="navbaricon" href="index.html"
+        ><button class="navbaricons" type="button">back</button></a
+      >
+      <p class="info" id="greeting"></p>
+    </p>
+    <style>
+      .navbarhome {
+        font-size: large;
+        border-style: hidden;
+        border-bottom: 2px solid red;
+        border-radius: 5px;
+        margin-left: 1px;
+      }
+      .navbarhome :hover {
+        font-size: x-large;
+        border-color: blue;
+        transition: 0.3s;
+        border-width: 3px;
+        color: blue;
+        cursor: pointer;
+      }
+      .subject {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(43, 197, 217);
+        border-radius: 10px;
+        font-size: xx-large;
+      }
+      .subject :hover {
+        width: 215px;
+        height: 215px;
+        border: solid red;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .subsci {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(43, 197, 217);
+        border-radius: 10px;
+        font-size: xx-large;
+        margin-left: 50px;
+      }
+      .subscie :hover {
+        width: 215px;
+        height: 215px;
+        border: solid red;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Welcome to the subjects area! click on any subject to view notes for that
+      subject
+    </h1>
+    <p>
+      <a class="subject" href="english_notes.html"
+        ><button class="subject" type="button">English</button></a
+      >
+      <a class="subscie" href="science_notes.html"><button class="subsci" type="button">Science</button></a>
+    </p>
+  </body>
+  <script src="scripts.js"></script>
+</html>
