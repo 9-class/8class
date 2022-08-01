@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,6 @@
   </head>
   <style>
     body {
-      background-image: url(https://i.ytimg.com/vi/3OwJDYCxd9Q/maxresdefault.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: inherit;
@@ -56,7 +55,11 @@
       <tr>
         <th>Name</th>
         <th>birth date</th>
-        <th>birthday coming in</th>
+        <th>
+          Days until birthday(if its in negative it means the number of days has
+          passed by after a certain student's birthday(only calculated for the
+          month of birthday))
+        </th>
       </tr>
       <tr>
         <td>S.Adharsh</td>
@@ -76,74 +79,73 @@
       <tr>
         <td>K.Gokula Krishnan</td>
         <td>october 1st 2009</td>
-        <td><p></p></td>
+        <td><p id="gokul"></p></td>
       </tr>
       <tr>
         <td>Harsha Varman.J</td>
         <td>august 18th 2009</td>
-        <td><p></p></td>
+        <td><p id="harsha"></p></td>
       </tr>
       <tr>
         <td>J.Joshuva</td>
         <td>july 3rd 2010</td>
-        <td><p></p></td>
+        <td><p id="joshuva"></p></td>
       </tr>
       <tr>
         <td>N.G.Keerthivasan</td>
         <td>october 10th 2010</td>
-        <td><p></p></td>
+        <td><p id="keerthivasan"></p></td>
       </tr>
       <tr>
         <td>S.A.Mithran</td>
         <td>january 20 2010</td>
-        <td><p></p></td>
+        <td><p id="mithran"></p></td>
       </tr>
       <tr>
         <td>Nitin Kamal.P.K</td>
         <td>october 21st 2009</td>
-        <td><p></p></td>
+        <td><p id="nitin"></p></td>
       </tr>
       <tr>
         <td>M.Praveen</td>
         <td>july 27th 2009</td>
-        <td><p></p></td>
+        <td><p id="praveen"></p></td>
       </tr>
       <tr>
         <td>P.S.Sanjay</td>
         <td>november 26th 2009</td>
-        <td><p></p></td>
+        <td><p id="sanjay"></p></td>
       </tr>
       <tr>
         <td>G.Shaswad</td>
         <td>december 11th 2009</td>
-        <td><p></p></td>
+        <td><p id="shaswad"></p></td>
       </tr>
       <tr>
         <td>S.R.Seshavardhan</td>
         <td>february 26th 2009</td>
-        <td><p></p></td>
+        <td><p id="seshavardhan"></p></td>
       </tr>
       <tr>
         <td>S.Srivarshan</td>
         <td>february 17th 2010</td>
-        <td><p></p></td>
+        <td><p id="srivarshan"></p></td>
       </tr>
       <tr>
         <td>H.S.Saichiranjeevi</td>
         <td>march 14th 2010</td>
-        <td><p></p></td>
+        <td><p id="sai"></p></td>
       </tr>
       <tr>
         <td>G.Tinakaran</td>
         <td>march 5th 2010</td>
-        <td><p></p></td>
+        <td><p id="tina"></p></td>
       </tr>
       <tr>
         <td>Vishnu Vikram</td>
         <td>december 2nd 2009</td>
-        <td><p></p></td>
+        <td><p id="vishnu"></p></td>
       </tr>
-      <tr></tr>
     </table>
   </body>
   <script>
@@ -215,6 +217,47 @@
           31 +
           30 +
           13;
+        d.innerHTML = remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 17;
+        f.innerHTML = remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 2;
+        g.innerHTML =
+          remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        h.innerHTML = 20 - x;
+        i.innerHTML =
+          remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 26;
+        k.innerHTML =
+          remainingdaysofm + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 25;
+        l.innerHTML =
+          remainingdaysofm +
+          28 +
+          31 +
+          30 +
+          31 +
+          30 +
+          31 +
+          31 +
+          30 +
+          31 +
+          30 +
+          10;
+        m.innerHTML = remainingdaysofm + 25;
+        n.innerHTML = remainingdaysofm + 16;
+        o.innerhtml = remainingdaysofm + 28 + 13;
+        p.innerHTML = remainingdaysofm + 28 + 4;
+        q.innerHTML =
+          remainingdaysofm +
+          28 +
+          31 +
+          30 +
+          31 +
+          30 +
+          31 +
+          31 +
+          30 +
+          31 +
+          30 +
+          1;
       }
       if (v == 2) {
         a.innerHTML =
@@ -222,6 +265,22 @@
         b.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 9;
         c.innerHTML =
           remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 17;
+        f.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 2;
+        g.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 26;
+        k.innerHTML =
+          remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 25;
+        l.innerHTML =
+          remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = 26 - x;
+        n.innerHTML = 17 - x;
+        o.innerHTML = remainingdaysofm + 13;
+        p.innerHTML = remainingdaysofm + 4;
+        q.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 3) {
         a.innerHTML =
@@ -229,52 +288,194 @@
         b.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 9;
         c.innerHTML =
           remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 17;
+        f.innerHTML = remainingdaysofm + 30 + 31 + 30 + 2;
+        g.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 30 + 31 + 30 + 26;
+        k.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 25;
+        l.innerHTML =
+          remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = 14 - x;
+        p.innerHTML = 5 - x;
+        q.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 4) {
         a.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 9;
         c.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 31 + 30 + 31 + 17;
+        f.innerHTML = remainingdaysofm + 31 + 30 + 2;
+        g.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 31 + 30 + 26;
+        k.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 25;
+        l.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 5) {
         a.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 9;
         c.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 30 + 31 + 17;
+        f.innerHTML = remainingdaysofm + 30 + 2;
+        g.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 30 + 26;
+        k.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 25;
+        remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 6) {
         a.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 31 + 31 + 30 + 9;
         c.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 31 + 31 + 30;
+        e.innerHTML = remainingdaysofm + 31 + 17;
+        f.innerHTML = remainingdaysofm + 2;
+        g.innerHTML = remainingdaysofm + 31 + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 31 + 31 + 30 + 20;
+        j.innerHTML = remainingdaysofm + 26;
+        k.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 25;
+        l.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 7) {
         a.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 31 + 30 + 9;
         c.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 31 + 30;
+        e.innerHTML = remainingdaysofm + 17;
+        f.innerHTML = 3 - x;
+        g.innerHTML = remainingdaysofm + 31 + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 31 + 30 + 20;
+        j.innerHTML = 27 - x;
+        k.innerHTML = remainingdaysofm + 31 + 30 + 31 + 25;
+        l.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 8) {
         a.innerHTML = remainingdaysofm + 30 + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 30 + 9;
         c.innerHTML = remainingdaysofm + 30 + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm + 30;
+        e.innerHTML = 18 - x;
+        f.innerHTML = "This student's birthday is over";
+        g.innerHTML = remainingdaysofm + 30 + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 30 + 20;
+        j.innerHTML = "this student's birthday is over";
+        k.innerHTML = remainingdaysofm + 30 + 31 + 25;
+        l.innerHTML = remainingdaysofm + 30 + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 30 + 31 + 30 + 1;
       }
       if (v == 9) {
         a.innerHTML = remainingdaysofm + 31 + 30 + 14;
         b.innerHTML = remainingdaysofm + 9;
         c.innerHTML = remainingdaysofm + 31 + 30 + 13;
+        d.innerHTML = remainingdaysofm;
+        e.innerHTML = "This student's birthday is over";
+        f.innerHTML = "This student's birthday is over";
+        g.innerHTML = remainingdaysofm + 9;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = remainingdaysofm + 20;
+        j.innerHTML = "this student's birthday is over";
+        k.innerHTML = remainingdaysofm + 31 + 25;
+        l.innerHTML = remainingdaysofm + 31 + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 31 + 30 + 1;
       }
       if (v == 10) {
         a.innerHTML = remainingdaysofm + 30 + 14;
         b.innerHTML = 10 - x;
         c.innerHTML = remainingdaysofm + 30 + 13;
+        d.innerHTML = "This student's birthday is over";
+        e.innerHTML = "This student's birthday is over";
+        f.innerHTML = "This student's birthday is over";
+        g.innerHTML = 10 - x;
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = 21 - x;
+        j.innerHTML = "this student's birthday is over";
+        k.innerHTML = remainingdaysofm + 25;
+        l.innerHTML = remainingdaysofm + 30 + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 30 + 1;
       }
       if (v == 11) {
         a.innerHTML = remainingdaysofm + 14;
         b.innerHTML = "This student's birthday is over";
         c.innerHTML = remainingdaysofm + 13;
+        d.innerHTML = "This student's birthday is over";
+        e.innerHTML = "This student's birthday is over";
+        f.innerHTML = "This student's birthday is over";
+        g.innerHTML = "this student's birthday is over";
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = "This student's birthday is over";
+        j.innerHTML = "this student's birthday is over";
+        k.innerHTML = 26 - x;
+        l.innerHTML = remainingdaysofm + 10;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = remainingdaysofm + 1;
       }
       if (v == 12) {
-        a.innerHTML = 14 - x;
+        a.innerHTML = 15 - x;
         b.innerHTML = "This student's birthday is over";
-        c.innerHTML = 13 - x;
+        c.innerHTML = 14 - x;
+        d.innerHTML = "This student's birthday is over";
+        e.innerHTML = "This student's birthday is over";
+        f.innerHTML = "This student's birthday is over";
+        g.innerHTML = "this student's birthday is over";
+        h.innerHTML = "this student's birthday is over";
+        i.innerHTML = "This student's birthday is over";
+        j.innerHTML = "this student's birthday is over";
+        k.innerHTML = "this student's birthday is over";
+        l.innerHTML = 10 - x;
+        m.innerHTML = "this student's birthday is over";
+        n.innerHTML = "this student's birthday is over";
+        o.innerHTML = "this student's birthday is over";
+        p.innerHTML = "this student's birthday is over";
+        q.innerHTML = 2 - x;
       }
-    }, 1000);
+    }, 10);
   </script>
 </html>
+
