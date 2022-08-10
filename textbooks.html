@@ -1,4 +1,4 @@
-<!doctypeHTML>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
@@ -12,7 +12,38 @@
         ><button class="navbaricons" type="button">Home</button></a
       >
       <a class="navbaricon" href="index.html"
-         ><button class="navbaricons" type="button">back</button></a>
+        ><button class="navbaricons" type="button">back</button></a
+      >
     </p>
+    <style>
+      .bookeng {
+        width: 182px;
+        height: 182px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: 0.4s;
+        background-color: aqua;
+      }
+      .bookeng:hover {
+        width: 195px;
+        height: 195px;
+        border: 2px solid red;
+        filter: brightness(80%);
+      }
+      .title_subjects {
+        margin-left: 30px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
+  <body>
+    <p class="title_subjects">English</p>
+      <a href="English/Honeydew" download
+        ><button class="bookeng" type="button">English Honeydew</button></a
+      >
+      <a href="English/it so happend" download="It So Happened"><button class="bookeng" type="button">English It So Happened</button></a>
+    <p class="title_subjects">Mathematics</p>
+    <a href="Mathematics" download><button class="bookeng">Mathematics book</button></a>
+  </body>
 </html>
