@@ -28,7 +28,6 @@ Screenshot_2022-08-09-20-27-54-140.jpeg
     <a href="#">Link 3</a>
   </div>
 </div>
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
