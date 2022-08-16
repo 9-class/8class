@@ -56,6 +56,16 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.menuopener {
+  width: 35px;
+  height: 32px;
+  background-color: white;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.menuopener:hover {
+    background-color: #818181;
+}
 </style>
 </head>
 <body>
@@ -70,7 +80,7 @@ body {
   <a href="about.html">About us</a>
 </div>
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#480; </span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menuopener" src="menu-outline.svg"></span>
 
 
 <script>
