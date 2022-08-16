@@ -7,54 +7,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
-    <p>
-        <a class="navbarhome" href="#"
-          ><button class="navbarhome" type="button">Home</button></a
-        >
-        <a class="navbaricon" href="subjects.html"
-          ><button class="navbaricons" type="button">subject notes</button></a
-        >
-        <a class="navbaricon" href="textbooks.html"
-           ><button class="navbaricons" type="button">text books</button></a
-        >
-        <a class="navbaricon" href="schedule for web.pdf" target="_blank"
-          ><button class="navbaricons" type="button">schedule</button></a
-        >
-        <a class="navbaricon" href="studentslist.html"
-          ><button class="navbaricons" type="button">students list</button></a
-        >
-        <a class="navbaricon" href="contact_us.html"
-          ><button class="navbaricons" type="button">contact us</button></a
-        >
-        <a class="navbaricon" href="about.html"
-          ><button class="navbaricons" type="button">About us</button></a
-        >
-    </p>
-    <p class="info" id="greeting"></p>
-    <style>
-        .navbarhome {
-          font-size: large;
-          border-style: hidden;
-          border-bottom: 2px solid red;
-          border-radius: 5px;
-          margin-left: 1px;
-          transition: 0.3s;
-        }
-        .navbarhome :hover {
-          font-size: x-large;
-          border-color: blue;
-          border-width: 3px;
-          color: blue;
-          cursor: pointer;
-        }
-        .desc {
-          font-size: large;
-        }
-        .info {
-          color: orangered;
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-      </style>
+    
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="subjects.html">Subject notes</a>
+  <a href="textbooks.html">Textbook</a>
+  <a href="studentslist.html">Student list</a>
+  <a href="contact_us.html">Contact Us </a>
+  <a href="about.html">About us</a>
+</div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
   </head>
   <body>
     <h1>Welcome to class VIII-C educational website</h1>
