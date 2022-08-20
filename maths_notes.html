@@ -41,6 +41,62 @@
         border: 2px solid blue;
         font-size: 18px;
       }
+         .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="Screenshot_2022-08-20-11-30-58-068.jpeg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">
+    
+
+        <a class="mathsn" href="ncert-solutions-for-class-8-maths-chapter-2.pdf" target="_blank"><button class="mathsn"> Chapter 2 </button></a>
+    </div>
+  </div>
+</div>
     
     </style>
       <p> this is where you download maths notes
@@ -54,7 +110,6 @@
 
         <a class="mathsn" href="Rational numbers" target="_blank"><button class="mathsn"> Chapter 1 </button></a> 
       <p> Chapter 2 </p>
-        <a class="mathsn" href="ncert-solutions-for-class-8-maths-chapter-2.pdf" target="_blank"> Chapter 2 </button><iframe src="https://onedrive.live.com/embed?cid=03FA036965A19F1E&resid=3FA036965A19F1E%211387&authkey=ADQ_EXsa0BR0Z2U&em=2" width="476" height="288" frameborder="0" scrolling="yes"></iframe></a>
     
         <a class="mathsn" href="ncert-solutions-dec2020-for-class-8-maths-chapter-3.pdf" target="_blank">  </a>
         <a class="mathsn" href="ncert-solutions-for-class-8-maths-chapter-4.pdf" target="_blank"><button class="mathsn"> Chapter 4 </button></a>
