@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about us</title>
-    <p>
-      <a class="navbarhome" href="index.html"
-        ><button class="navbarhome" type="button">Home</button></a
-      >
-      <a class="navbaricon" href="index.html"
-        ><button class="navbaricons" type="button">back</button></a
-      >
-    </p>
   </head>
   <body>
     <style>
@@ -58,16 +51,30 @@
         cursor: pointer;
       }
     </style>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a class="active" href="index.html">Home</a>
+      <a href="subjects.html">Subject notes</a>
+      <a href="textbooks.html">Textbook</a>
+      <a href="studentslist.html">Student list</a>
+      <a href="contact_us.html">Contact Us </a>
+      <a class="active" href="about.html">About us</a>
+      <a href="https://lachat.clobas.com" target="_blank">
+        our school website
+      </a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      ><img class="menuopener" src="menu-outline.svg"
+    /></span>
     <h1>About us</h1>
     <p class="contributors">
       co-founder and developer: Nitin Kamal.P.K
-      <br>
+      <br />
       founder and developer: Vishnu Vikram
-      <br>
-      
-      
-      
-      
+      <br />
     </p>
   </body>
+  <script src="scripts.js"></script>
 </html>

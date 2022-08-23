@@ -7,14 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <p>
-      <a class="navbaricon" href="index.html"
-        ><button class="navbaricons" type="button">Home</button></a
-      >
-      <a class="navbaricon" href="index.html"
-        ><button class="navbaricons" type="button">back</button></a
-      >
-    </p>
     <style>
       .emailvishnu {
         cursor: pointer;
@@ -23,8 +15,6 @@
         border-radius: 10px;
         transition: 0.3s;
         border-style: hidden;
-        margin-bottom: 20px;
-        margin-top: 40px;
       }
       .emailvishnu:hover {
         border: 2px solid blue;
@@ -37,6 +27,7 @@
         border-radius: 10px;
         transition: 0.3s;
         border-style: hidden;
+        margin-top: 10px;
       }
       .emailnitin:hover {
         font-size: 16px;
@@ -45,6 +36,25 @@
     </style>
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subject notes</a>
+      <a href="textbooks.html">Textbook</a>
+      <a href="studentslist.html">Student list</a>
+      <a class="active" href="contact_us.html">Contact Us </a>
+      <a href="about.html">About us</a>
+      <a href="https://lachat.clobas.com" target="_blank">
+        our school website
+      </a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      ><img class="menuopener" src="menu-outline.svg"
+    /></span>
+
+
     <a href="mailto:vishnuvikram828@gmail.com"
       ><button class="emailvishnu" type="button">Vishnu Vikram</button></a
     ><br />
@@ -52,4 +62,5 @@
       ><button class="emailnitin" type="button">Nitin Kamal.P.K</button></a
     >
   </body>
+  <script src="scripts.js"></script>
 </html>

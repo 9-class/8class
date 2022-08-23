@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>science notes</title>
-    <p>
-      <a class="navbarhome" href="index.html"
-        ><button class="navbarhome" type="button">Home</button></a
-      >
-      <a class="navbaricon" href="subjects.html"
-        ><button class="navbaricons" type="button">back</button></a
-      >
-    </p>
-    <p class="info" id="greeting"></p>
     <style>
       .navbarhome {
         font-size: large;
@@ -80,6 +72,24 @@
     </style>
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a class="active" href="subjects.html">Subject notes</a>
+      <a href="textbooks.html">Textbook</a>
+      <a href="studentslist.html">Student list</a>
+      <a href="contact_us.html">Contact Us </a>
+      <a href="about.html">About us</a>
+      <a href="https://lachat.clobas.com" target="_blank">
+        our school website
+      </a>
+      <a href="subjects.html">back</a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      ><img class="menuopener" src="menu-outline.svg"
+    /></span>
     <h1>
       Welcome to science notes area! Here, you can get all the answers for every
       chapter of the allern active QR book. Just choose any chapter

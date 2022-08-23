@@ -7,14 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>birthday list</title>
-    <p>
-      <a class="navbarhome" href="index.html"
-        ><button class="navbarhome" type="button">Home</button></a
-      >
-      <a class="navbaricon" href="studentslist.html"
-        ><button class="navbaricons" type="button">back</button></a
-      >
-    </p>
   </head>
   <style>
     body {
@@ -53,6 +45,25 @@
     }
   </style>
   <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subject notes</a>
+      <a href="textbooks.html">Textbook</a>
+      <a class="active" href="studentslist.html">Student list</a>
+      <a class="active" href="birthdaylist.html">birthday list</a>
+      <a href="contact_us.html">Contact Us </a>
+      <a href="about.html">About us</a>
+      <a href="https://lachat.clobas.com" target="_blank">
+        our school website
+      </a>
+      <a href="studentslist.html">back</a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      ><img class="menuopener" src="menu-outline.svg"
+    /></span>
     <table>
       <tr>
         <th>Name</th>
@@ -282,7 +293,8 @@
         n.innerHTML = 17 - x;
         o.innerHTML = remainingdaysofm + 13;
         p.innerHTML = remainingdaysofm + 4;
-        q.innerHTML = remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
+        q.innerHTML =
+          remainingdaysofm + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 3) {
         a.innerHTML =
@@ -304,7 +316,8 @@
         n.innerHTML = "this student's birthday is over";
         o.innerHTML = 14 - x;
         p.innerHTML = 5 - x;
-        q.innerHTML = remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
+        q.innerHTML =
+          remainingdaysofm + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 1;
       }
       if (v == 4) {
         a.innerHTML = remainingdaysofm + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 14;
@@ -478,57 +491,61 @@
         q.innerHTML = 2 - x;
       }
       if (a.innerHTML == 0) {
-        a.innerHTML = "today is adharsh's birthday, dont forgot to wish him!"
+        a.innerHTML = "today is adharsh's birthday, dont forgot to wish him!";
       }
       if (b.innerHTML == 0) {
-        b.innerHTML = "today is balaji's birthday, dont forgot to wish him!"
+        b.innerHTML = "today is balaji's birthday, dont forgot to wish him!";
       }
       if (c.innerHTML == 0) {
-        c.innerHTML = "today is dhikshan's birthday, dont forgot to wish him!"
+        c.innerHTML = "today is dhikshan's birthday, dont forgot to wish him!";
       }
       if (d.innerHTML == 0) {
-        d.innerHTML = "today is gokul's birthday, dont forgot to wish him!"
+        d.innerHTML = "today is gokul's birthday, dont forgot to wish him!";
       }
       if (e.innerHTML == 0) {
-        e.innerHTML = "today is harsha's birthday, dont forgot to wish him!"
+        e.innerHTML = "today is harsha's birthday, dont forgot to wish him!";
       }
       if (f.innerHTML == 0) {
-        f.innerHTML = "today is joshuva's birthday, dont forgot to wish him!"
+        f.innerHTML = "today is joshuva's birthday, dont forgot to wish him!";
       }
       if (g.innerHTML == 0) {
-        g.innerHTML = "today is keerthivasan's birthday, dont forgot to wish him!"
+        g.innerHTML =
+          "today is keerthivasan's birthday, dont forgot to wish him!";
       }
       if (h.innerHTML == 0) {
-        h.innerHTML = "today is mithran's birthday, dont forgot to wish him!"
+        h.innerHTML = "today is mithran's birthday, dont forgot to wish him!";
       }
       if (i.innerHTML == 0) {
-        i.innerHTML = "today is nitin's birthday, dont forgot to wish him!"
+        i.innerHTML = "today is nitin's birthday, dont forgot to wish him!";
       }
       if (j.innerHTML == 0) {
-        j.innerHTML = "today is praveen's birthday, dont forgot to wish him!"
+        j.innerHTML = "today is praveen's birthday, dont forgot to wish him!";
       }
       if (k.innerHTML == 0) {
-        k.innerHTML = "today is sanjay's birthday, dont forgot to wish him!"
+        k.innerHTML = "today is sanjay's birthday, dont forgot to wish him!";
       }
       if (l.innerHTML == 0) {
-        l.innerHTML = "today is shaswad's birthday, dont forgot to wish him!"
+        l.innerHTML = "today is shaswad's birthday, dont forgot to wish him!";
       }
       if (m.innerHTML == -1) {
-        m.innerHTML = "today is seshavardhan's birthday, dont forgot to wish him!"
+        m.innerHTML =
+          "today is seshavardhan's birthday, dont forgot to wish him!";
       }
       if (n.innerHTML == 0) {
-        n.innerHTML = "today is srivarshan's birthday, dont forgot to wish him!"
+        n.innerHTML =
+          "today is srivarshan's birthday, dont forgot to wish him!";
       }
-      if (o.innerHTML == -0 {
-        o.innerHTML = "today is saichiranjeevi's birthday, dont forgot to wish him!"
+      if (o.innerHTML == -0) {
+        o.innerHTML =
+          "today is saichiranjeevi's birthday, dont forgot to wish him!";
       }
       if (p.innerHTML == 0) {
-        p.innerHTML = "today is tinakaran's birthday, dont forgot to wish him!"
+        p.innerHTML = "today is tinakaran's birthday, dont forgot to wish him!";
       }
       if (q.innerHTML == 0) {
-        q.innerHTML = "today is vishnu's birthday, dont forgot to wish him!"
+        q.innerHTML = "today is vishnu's birthday, dont forgot to wish him!";
       }
     }, 10);
   </script>
+  <script src="scripts.js"></script>
 </html>
-
