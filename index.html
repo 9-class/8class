@@ -69,6 +69,93 @@
       .menuopener:hover {
         background-color: #818181;
       }
+      /* Style The Dropdown Button */
+
+      .dropbtn {
+
+        background-color: #ffaacc;
+
+        color: green;
+
+        padding: 16px;
+
+        font-size: 20px;
+
+        cursor: pointer;
+
+        border-radius: 10px;
+
+        border: 2px solid red;
+
+        margin-left: 10px;
+
+      }
+
+      .dropbtn:hover {
+
+        border: 2px solid blue;
+
+      }
+
+      /*  position the dropdown content */
+
+      .dropdown {
+
+        position: relative;
+
+		display: inline-block
+
+      }
+
+      /* Dropdown Content hidden by Default */
+
+      .dropdown-content {
+
+        display: none;
+
+        position: absolute;
+
+        background-color: #0377fc;
+
+        min-width: 160px;
+
+        z-index: 1;
+
+        border-radius: 8px;
+
+        margin-left: 10px;
+
+      }
+
+      /* Links inside the dropdown */
+
+      .dropdown-content a {
+
+        color: black;
+
+        padding: 12px 16px;
+
+        text-decoration: none;
+
+        display: block;
+
+      }
+
+      /* Change color of dropdown links on hover */
+
+      .dropdown-content a:hover {
+
+        background-color: #254973;
+
+      }
+
+      /* Show the dropdown menu on hover */
+
+      .dropdown:hover .dropdown-content {
+
+        display: block;
+
+      }
     </style>
   </head>
   <body>
@@ -80,7 +167,23 @@
           >
           <a class="active" href="index.html">Home</a>
           <a href="subjects.html">Subject notes</a>
-          <a href="textbooks.html">Textbook</a>
+          <a<div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="index.html">Home</a>
+          <a href="subjects.html">Subject notes</a>
+          <a class="active" href="textbooks.html">Textbook</a>
+          <a href="studentslist.html">Student list</a>
+          <a href="contact_us.html">Contact Us </a>
+          <a href="about.html">About us</a>
+          <a href="https://lachat.clobas.com" target="_blank">
+            our school website
+          </a>
+        </div>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          ><img class="menuopener" src="menu-outline.svg"
+        /></span>
           <a href="studentslist.html">Student list</a>
           <a href="contact_us.html">Contact Us </a>
           <a href="about.html">About us</a>
