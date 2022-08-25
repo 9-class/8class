@@ -9,7 +9,8 @@ body {
   background-size: cover;
   background-position: inherit;
   background-attachment: fixed;
-  font-family: "lato", sans-serif;
+  font-family: 'Amita';
+  font-size: 22px;
 }
 h1 {
   color: white;
