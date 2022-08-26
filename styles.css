@@ -130,6 +130,7 @@ th {
   background-color: aqua;
   margin-bottom: 30px;
   position: relative;
+  transition: 0.5s;
 }
 .navbar div a {
   display: inline-block;
