@@ -131,6 +131,7 @@ th {
   margin-bottom: 30px;
   position: relative;
   transition: 0.5s;
+  width: 3000px;
 }
 .navbar div a {
   display: inline-block;
