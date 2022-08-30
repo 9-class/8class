@@ -9,17 +9,19 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-  // true for mobile device
-  let check = document.write("mobile device");
-}else{
-  // false for not mobile device
-  let check = document.write("not mobile device");
+let check = ''
+if (window.matchMedia("(max-width: 767px)").matches)
+{
+// The viewport is less than 768 pixels wide
+check = document.write("mobile device");
+} else {
+  check = document.write('not a mobile device')
 }
 let cent = document.getElementById('centre')
 if (check == "mobile device") {
   console.log(check)
   cent.style.textAlign = "center";
 } else {
+  console.log(check)
   cent.style.textAlign = "left";
 }
