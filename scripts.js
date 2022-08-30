@@ -16,3 +16,10 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.us
   // false for not mobile device
   let check = document.write("not mobile device");
 }
+let cent = document.getElementById('centre')
+if (check == "mobile device") {
+  console.log(check)
+  cent.style.textAlign = "center";
+} else {
+  cent.style.textAlign = "left";
+}
