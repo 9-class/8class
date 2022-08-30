@@ -13,9 +13,9 @@ let check = ''
 if (window.matchMedia("(max-width: 767px)").matches)
 {
 // The viewport is less than 768 pixels wide
-check = document.write("mobile device");
+check = "mobile device";
 } else {
-  check = document.write('not a mobile device')
+  check = "not a mobile device";
 }
 let cent = document.getElementById('centre')
 if (check == "mobile device") {
