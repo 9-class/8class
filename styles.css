@@ -2,14 +2,8 @@
   margin: 0;
   padding: 0;
 }
-
-p }
-text-align: centre
-}
-
-
 body {
-  background-image: url(https://media.istockphoto.com/photos/mountain-of-books-education-dark-background-picture-id1195277271?k=20&m=1195277271&s=170667a&w=0&h=F93ZN7IrlYLpAEMwUAeEl1wRQuFmIKlE8Apa-qPDbgg=);
+  background-image: url(https://cdn.pixabay.com/photo/2015/10/31/14/33/dark-1015825_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: inherit;
@@ -20,24 +14,31 @@ body {
 }
 h1 {
   color: white;
+  text-align: center;
 }
 h2 {
   color: white;
+  text-align: center;
 }
 h3 {
   color: white;
+  text-align: center;
 }
 h4 {
   color: white;
+  text-align: center;
 }
 h5 {
   color: white;
+  text-align: center;
 }
 h6 {
   color: white;
+  text-align: center;
 }
 p {
   color: white;
+  text-align: center;
 }
 .navbaricons {
   font-size: large;
@@ -60,6 +61,10 @@ table {
   color: white;
   border: 2px solid greenyellow;
   width: 930px;
+  text-align: center;
+}
+.centre {
+  margin-left: 275px;
 }
 th {
   color: blue;
