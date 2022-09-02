@@ -83,10 +83,10 @@
         display: none;
         position: absolute;
         background-color: #0377fc;
-        min-width: 160px;
+        width: 215px;
         z-index: 1;
         border-radius: 8px;
-        margin-left: 10px;
+        margin-left: 50px;
       }
 
       /* Links inside the dropdown */
@@ -105,6 +105,19 @@
       /* Show the dropdown menu on hover */
       .dropdown:hover .dropdown-content {
         display: block;
+      }
+      .gn {
+        border-radius: 5px;
+        border: none;
+        width: 170px;
+        height: 24px;
+        border: 1px solid red;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .gn:hover {
+        border: 3px solid orange;
+      }
     </style>
   </head>
   <body>
@@ -141,6 +154,7 @@
       subject
     </h1>
     <p id="centre">
+      <p style="font-size: larger;">subjects</p>
       <a class="subject" href="english_notes.html"
         ><button class="subject" type="button">English</button></a
       >
@@ -150,45 +164,45 @@
       <a class="subscie" href="maths_notes.html"
         ><button class="subsci" type="button">mathematics</button></a
       >
-        <div id="centre" class="dropdown">
-      <button class="dropbtn">geography </button>
+      <div id="centre" class="dropdown">
+      <a class="subscie" href="#"><button class="subsci" type="button">civics</button></a>
       <div class="dropdown-content">
-   <a id="centre" href="c1.pdf"><button class="gn">chapter 1</button></a>
-   <a id="centre" href="c2.pdf"><button class="gn">chapter 2</button></a>
-   <a id="centre" href="c3.pdf"><button class="gn">chapter 3</button></a>
-   <a id="centre" href="c4.pdf"><button class="gn">chapter 4</button></a>
-   <a id="centre" href="c5.pdf"><button class="gn">chapter 5</button></a>
-   <a id="centre" href="c6.pdf"><button class="gn">chapter 6</button></a>
-   <a id="centre" href="c7.pdf"><button class="gn">chapter 7</button></a>
-   <a id="centre" href="c8.pdf"><button class="gn">chapter 8</button></a>
-   <a id="centre" href="c9.pdf"><button class="gn">chapter 9</button></a>
-   <a id="centre" href="c10.pdf"><button class="gn">chapter 10</button></a>
+   <a id="centre" href="c1.pdf" target="_blank"><button class="gn">chapter 1</button></a>
+   <a id="centre" href="c2.pdf" target="_blank"><button class="gn">chapter 2</button></a>
+   <a id="centre" href="c3.pdf" target="_blank"><button class="gn">chapter 3</button></a>
+   <a id="centre" href="c4.pdf" target="_blank"><button class="gn">chapter 4</button></a>
+   <a id="centre" href="c5.pdf" target="_blank"><button class="gn">chapter 5</button></a>
+   <a id="centre" href="c6.pdf" target="_blank"><button class="gn">chapter 6</button></a>
+   <a id="centre" href="c7.pdf" target="_blank"><button class="gn">chapter 7</button></a>
+   <a id="centre" href="c8.pdf" target="_blank"><button class="gn">chapter 8</button></a>
+   <a id="centre" href="c9.pdf" target="_blank"><button class="gn">chapter 9</button></a>
+   <a id="centre" href="c10.pdf" target="_blank"><button class="gn">chapter 10</button></a>
       </div>
     </div>
       <div id="centre" class="dropdown">
-      <button class="dropbtn">civics</button>
+      <a class="subscie" href="#"><button class="subsci" type="button">history</button></a>
       <div class="dropdown-content">
-       <a id="centre" href="h1.pdf"><button class="hn">chapter 1</button></a>
-       <a id="centre" href="h2.pdf"><button class="hn">chapter 2</button></a>
-       <a id="centre" href="h3.pdf"><button class="hn">chapter 3</button></a>
-       <a id="centre" href="h4.pdf"><button class="hn">chapter 4</button></a>
-       <a id="centre" href="h5.pdf"><button class="hn">chapter 5</button></a>
-       <a id="centre" href="h6.pdf"><button class="hn">chapter 6</button></a>
-       <a id="centre" href="h7.pdf"><button class="hn">chapter 7</button></a>
-       <a id="centre" href="h8.pdf"><button class="hn">chapter 8</button></a> 
-       <a id="centre" href="h9.pdf"><button class="hn">chapter 9</button></a>
-       <a id="centre" href="h10.pdf"><button class="hn">chapter 10</button></a>
+       <a id="centre" href="h1.pdf" target="_blank" target="_blank"><button class="gn">chapter 1</button></a>
+       <a id="centre" href="h2.pdf" target="_blank"><button class="gn">chapter 2</button></a>
+       <a id="centre" href="h3.pdf" target="_blank"><button class="gn">chapter 3</button></a>
+       <a id="centre" href="h4.pdf" target="_blank"><button class="gn">chapter 4</button></a>
+       <a id="centre" href="h5.pdf" target="_blank"><button class="gn">chapter 5</button></a>
+       <a id="centre" href="h6.pdf" target="_blank"><button class="gn">chapter 6</button></a>
+       <a id="centre" href="h7.pdf" target="_blank"><button class="gn">chapter 7</button></a>
+       <a id="centre" href="h8.pdf" target="_blank"><button class="gn">chapter 8</button></a> 
+       <a id="centre" href="h9.pdf" target="_blank"><button class="gn">chapter 9</button></a>
+       <a id="centre" href="h10.pdf" target="_blank"><button class="gn">chapter 10</button></a>
       </div>
     </div>
       <div id="centre" class="dropdown">
-      <button class="dropbtn">geography </button>
+      <a class="subscie" href="#"><button class="subsci" type="button">geography</button></a>
       <div class="dropdown-content">
-        <a id="centre" href="g1.pdf"><button class="gn">chapter 1</button></a>
-        <a id="centre" href="g2.pdf"><button class="gn">chapter 2</button></a>
-        <a id="centre" href="g3.pdf"><button class="gn">chapter 3</button></a>
-        <a id="centre" href="g4.pdf"><button class="gn">chapter 4</button></a>
-        <a id="centre" href="g5.pdf"><button class="gn">chapter 5</button></a>
-        <a id="centre" href="g6.pdf"><button class="gn">chapter 6</button></a>
+        <a id="centre" href="g1.pdf" target="_blank"><button class="gn">chapter 1</button></a>
+        <a id="centre" href="g2.pdf" target="_blank"><button class="gn">chapter 2</button></a>
+        <a id="centre" href="g3.pdf" target="_blank"><button class="gn">chapter 3</button></a>
+        <a id="centre" href="g4.pdf" target="_blank"><button class="gn">chapter 4</button></a>
+        <a id="centre" href="g5.pdf" target="_blank"><button class="gn">chapter 5</button></a>
+        <a id="centre" href="g6.pdf" target="_blank"><button class="gn">chapter 6</button></a>
       </div>
     </div>
     </p>
