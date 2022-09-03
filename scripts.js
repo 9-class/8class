@@ -9,4 +9,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-
+let time = document.getElementById('current-time')
+setInterval(() =>{
+  let d = new Date();
+  time.innerHTML = d.toLocaleTimeString();
+},10)
