@@ -5,3 +5,4 @@ information, links and images provided here are collected from direct sources(fo
 checked if they are not under copyright and free to use. Pdfs are created by byjus except tamil and hindi and csc, if u have any queries or suggestion,
  Email us to 8.c.webpage@gmail.com
  Thanks for visiting
+ our app for desktop(for easy accessing, will soon be added for mobile): https://github.com/class-8/8-c-edu/releases/tag/v1.8.0
