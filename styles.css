@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+marquee {
+
+  color: white;
+
+}
+
 body {
   background-image: url(https://cdn.pixabay.com/photo/2015/10/31/14/33/dark-1015825_960_720.jpg);
   background-repeat: no-repeat;
