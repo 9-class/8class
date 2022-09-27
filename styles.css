@@ -144,7 +144,7 @@ th {
 }
 .navbar {
   height: 45px;
-  background-color: aqua;
+  background-color: #0E00FF;
   margin-bottom: 30px;
   position: relative;
   transition: 0.5s;
