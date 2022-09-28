@@ -130,11 +130,11 @@ th {
 .menuopener {
   width: 35px;
   height: 32px;
-  background-color: white;
   border-radius: 4px;
-  transition: 0.8s;
+  transition: 0.5s;
   margin-top: 6px;
   margin-left: 9px;
+  background-color: white;
 }
 .menuopener:hover {
   background-color: #818181;
@@ -168,7 +168,7 @@ th {
   color: gray;
 }
 .navbaritem:hover {
-  color: blue;
+  color: greenyellow;
 }
 .time {
   display: inline-block;

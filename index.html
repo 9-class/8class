@@ -25,12 +25,15 @@
         width: 136px;
         height: 34px;
         border-radius: 10px;
-        transition: 0.3s;
+        transition: 0.4s;
         border-style: hidden;
         text-align: center;
         background-color: #343434;
+        margin: 12px;
       }
-
+    .download:hover {
+      background-color: gray;
+    }
       
       .sidenav {
         height: 100%;
@@ -115,12 +118,13 @@
           </a>
         </div>
         <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-          ><img class="menuopener" src="img_4664.png"
+          ><img class="menuopener" src="menu-outline.jpg"
         /></span>
         <h5 class="time" id="current-time"></h5>
       </p>
     </nav>
   <marquee behavior="alternate" scrollamount="10"> HAPPY NAVARATRI HOLIDAY </marquee>
+  <marquee behavior="alternate" scrollamount="10"><p id="wish"></p></marquee>
     <h1 id="centre" class="body">Welcome to class VIII-C educational website.</h1>
     <p id="centre" class="desc">
       Click the hamburger menu in the top left corner to access notes, textbooks and more...
