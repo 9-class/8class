@@ -14,12 +14,12 @@ setInterval(() =>{
   let d = new Date();
   time.innerHTML = d.toLocaleTimeString();
 },10)
+let marq = document.getElementById('wish');
 setInterval(() =>{
   let dt = new Date();
   let gt = dt.getDate();
   let ot = dt.getMonth() + 1;
   if (gt == 15 && ot == 12) {
-    let marq = document.getElementById('wish');
     marq.innerHTML = "Its Adharsh's birthday, don't forgot to wish him!";
   } else if (gt == 10 && ot == 10) {
     marq.innerHTML = "Its Balaji's birthday, don't forgot to wish him!";
