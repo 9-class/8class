@@ -7,6 +7,5 @@ checked if they are not under copyright and free to use. Pdfs are created by byj
  Thanks for visiting
  our app for desktop(for easy accessing, will soon be added for mobile)
  
- download our app here ↓
- 
+ download our app here ↓ 
 https://github.com/class-8/8-c-edu/releases/tag/v1.0.9
