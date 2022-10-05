@@ -53,5 +53,21 @@ setInterval(() =>{
     marq.innerHTML = "Its Tinakaran's birthday, don't forgot to wish him!";
   } else if (gt == 2 && ot == 12) {
     marq.innerHTML = "Its Vishnu Vikram(founder)'s birthday, don't forgot to wish him!";
+  } else if (gt == 15 || 16 || 17 || 18 && ot == 1) {
+    marq.innerHTML - "Happy Pongal";
+  } else if (gt == 29 && ot == 3) {
+    marq.innerHTML = "Happy Holi";
+  } else if (gt == 22 && ot == 8) {
+    marq.innerHTML = "Happy Rakshabandhan";
+  } else if (gt == 15 && ot == 8) {
+    marq.innerHTML = "Happy Independence day, Jai Hindh";
+  } else if (gt == 30 || 31 && ot == 8) {
+    marq.innerHTML = "Happy Onam";
+  } else if (gt == 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 && ot == 9) {
+    marq.innerHTML = "Happy Onam";
+  } else if (gt == 10 && ot == 9) {
+    marq.innerHTML = "Happy Ganesh Chaturthi";
+  } else if (gt == 25 && ot == 12) {
+    marq.innerHTML = "Happy Christmas";
   }
 },50)
